@@ -61,7 +61,8 @@ async function processChannel(channel, banned_regexs) {
                             deleted_ct++;
                         }
                     }
-                }
+                })
+
                 message = 0 < messagePage.size ? messagePage.at(messagePage.size - 1) : null;
             })
             .catch(error => {
