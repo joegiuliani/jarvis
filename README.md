@@ -1,1 +1,1 @@
-my personal assistant on discord
+my personal assistant for discord
