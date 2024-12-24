@@ -34,7 +34,7 @@ async function processGuild(guild) {
     const channels = guild.channels.cache.filter(c => c.isTextBased()); // Get text channels
     for (const [channelId, channel] of channels) {
         if (channel.name !== "banned-regexs")
-            hit_count += await processChannel(channel, banned_regexs);
+            await processChannel(channel, banned_regexs);
     }
     console.log("Finished Server:" + guild.name + ".");
 }
